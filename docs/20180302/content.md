@@ -1,4 +1,6 @@
-## 版权信息 ##
+# 参考文档
+此文档对应Covariant Script标准`STD20180302`
+## 版权信息
 
 版权所有 © 2018 Michael Lee(李登淳)  
 
@@ -12,15 +14,15 @@
 
 ## 目录 ##
 + 类型
-    + [数值类型](http://covscript.org/docs/types/number)
-    + [逻辑类型](http://covscript.org/docs/types/boolean)
-    + [指针类型](http://covscript.org/docs/types/pointer)
-    + [字符类型](http://covscript.org/docs/types/char)
-    + [文字类型](http://covscript.org/docs/types/string)
-    + [数组类型](http://covscript.org/docs/types/array)
-    + [线性表类型](http://covscript.org/docs/types/list)
-    + [映射类型](http://covscript.org/docs/types/pair)
-    + [散列表类型](http://covscript.org/docs/types/hash_map)
+    + [数值类型](http://covscript.org/docs/20180302/types/number)
+    + [逻辑类型](http://covscript.org/docs/20180302/types/boolean)
+    + [指针类型](http://covscript.org/docs/20180302/types/pointer)
+    + [字符类型](http://covscript.org/docs/20180302/types/char)
+    + [文字类型](http://covscript.org/docs/20180302/types/string)
+    + [数组类型](http://covscript.org/docs/20180302/types/array)
+    + [线性表类型](http://covscript.org/docs/20180302/types/list)
+    + [映射类型](http://covscript.org/docs/20180302/types/pair)
+    + [散列表类型](http://covscript.org/docs/20180302/types/hash_map)
 + 语法
     + 预处理
     + 模块
