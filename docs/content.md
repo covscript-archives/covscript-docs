@@ -1,4 +1,3 @@
-# Covariant Script编程语言：参考文档 #
 ## 版权信息 ##
 
 版权所有 © 2018 Michael Lee(李登淳)  
