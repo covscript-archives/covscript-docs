@@ -35,13 +35,25 @@
     + [结构](http://covscript.org/docs/20180302/syntax/structure)
 + API
     + 标准库
+        + [全局](http://covscript.org/docs/20180302/api/std/global)
+        + [异常](http://covscript.org/docs/20180302/api/std/exception)
+        + [输入输出流](http://covscript.org/docs/20180302/api/std/iostream)
+        + [系统](http://covscript.org/docs/20180302/api/std/system)
+        + [运行时](http://covscript.org/docs/20180302/api/std/runtime)
+        + [数学](http://covscript.org/docs/20180302/api/std/math)
+        + [字符](http://covscript.org/docs/20180302/api/std/char)
+        + [文字](http://covscript.org/docs/20180302/api/std/string)
+        + [数组](http://covscript.org/docs/20180302/api/std/array)
+        + [线性表](http://covscript.org/docs/20180302/api/std/list)
+        + [映射](http://covscript.org/docs/20180302/api/std/pair)
+        + [散列表](http://covscript.org/docs/20180302/api/std/hash_map)
     + 扩展库
-        + ImGui
-        + Darwin
-        + Regex
-        + Streams
-        + SQLite
-        + Network
+        + [ImGui](http://covscript.org/docs/20180302/api/ext/imgui)
+        + [Darwin](http://covscript.org/docs/20180302/api/ext/darwin)
+        + [Regex](http://covscript.org/docs/20180302/api/ext/regex)
+        + [Streams](http://covscript.org/docs/20180302/api/ext/streams)
+        + [SQLite](http://covscript.org/docs/20180302/api/ext/sqlite)
+        + [Network](http://covscript.org/docs/20180302/api/ext/network)
     + 第三方库
         + Picasso
         + Asserts
