@@ -24,14 +24,15 @@
     + [映射类型](http://covscript.org/docs/20180302/types/pair)
     + [散列表类型](http://covscript.org/docs/20180302/types/hash_map)
 + 语法
-    + 预处理
-    + 模块
-    + 变量
-    + 作用域
-    + 流控制
-    + 函数
-    + 异常
-    + 结构
+    + [预处理](http://covscript.org/docs/20180302/syntax/preprocessor)
+    + [模块](http://covscript.org/docs/20180302/syntax/modules)
+    + [变量](http://covscript.org/docs/20180302/syntax/variables)
+    + [表达式](http://covscript.org/docs/20180302/syntax/expression)
+    + [作用域](http://covscript.org/docs/20180302/syntax/domains)
+    + [流控制](http://covscript.org/docs/20180302/syntax/statements)
+    + [函数](http://covscript.org/docs/20180302/syntax/function)
+    + [异常](http://covscript.org/docs/20180302/syntax/exceptions)
+    + [结构](http://covscript.org/docs/20180302/syntax/structure)
 + API
     + 标准库
     + 扩展库
