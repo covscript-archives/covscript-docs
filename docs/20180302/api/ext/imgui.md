@@ -107,6 +107,7 @@
 :---:|:---:
 `boolean tree_node(string label)`|创建新的树节点
 `void tree_pop()`|结束树节点
+
 *注意，只有 tree_node()返回真时才需要调用 tree_pop()*
 
 ### 菜单
@@ -124,6 +125,7 @@
 `boolean begin_popup_window()`|开始窗口右键菜单布局
 `boolean begin_popup_background()`|开始背景右键菜单布局
 `void end_popup()`|结束右键菜单布局
+
 *注意，只有菜单成功打开才需要调用结束函数*
 
 ### 焦点
@@ -185,6 +187,7 @@
 `boolean is_closed([application] app)`|判断主窗口是否已经关闭
 `void prepare([application] app)`|准备帧
 `void render([application] app)`|渲染帧
+
 *一般情况下一个程序只允许有一个应用程序实例，多个实例的行为未定义*  
 *ImGui 要求在渲染前必须准备帧，渲染帧将会呈现当前帧到屏幕上*  
 *典型的主循环结构如下*
