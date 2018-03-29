@@ -1,6 +1,6 @@
-### 流式 API 扩展
+# 流式 API 扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `[streams] of(list)`|从 `list` 构建一个 `stream` 对象
 `void for_each([streams],function action)`|对流中每一个元素执行一次 `action`

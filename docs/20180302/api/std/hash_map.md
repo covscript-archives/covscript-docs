@@ -1,6 +1,6 @@
 ### 哈希表类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `boolean empty(hash_map)`|检查容器是否为空
 `number size(hash_map)`|返回容纳的元素数

@@ -1,14 +1,14 @@
-### Network 扩展
+# Network 扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `tcp`|TCP 套接字名称空间
 `udp`|UDP 套接字名称空间
 `string host_name()`|获取主机名
 
-#### TCP 套接字名称空间
+## TCP 套接字名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `socket`|TCP 套接字类型
 `[tcp::acceptor] acceptor([tcp::endpoint])`|在端点上建立接收器
@@ -17,9 +17,9 @@
 `[tcp::endpoint] endpoint_v6(number port)`|在任意 IPv6 地址上和指定端口上建立端点
 `[tcp::endpoint] resolve(string host,string service)`|解析主机的服务并建立端点
 
-### TCP 套接字类型扩展
+## TCP 套接字类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `void connect([tcp::socket],[tcp::endpoint])`|连接到端点
 `void accept([tcp::socket],[tcp::acceptor])`|接受一个 TCP 请求
@@ -29,9 +29,9 @@
 `void send([tcp::socket],string buffer)`|发送一些数据
 `[tcp::endpoint] remote_endpoint([tcp::socket])`|获取远程端点
 
-#### UDP 套接字名称空间
+## UDP 套接字名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `socket`|UDP 套接字类型
 `[udp::endpoint] endpoint(string address,number port)`|在指定 IP 地址和端口上建立端点
@@ -39,9 +39,9 @@
 `[udp::endpoint] endpoint_v6(number port)`|在任意 IPv6 地址上和指定端口上建立端点
 `[udp::endpoint] resolve(string host,string service)`|解析主机的服务并建立端点
 
-### UDP 套接字类型扩展
+## UDP 套接字类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `void open_v4([udp::socket])`|打开 IPv4 协议套接字
 `void open_v6([udp::socket])`|打开 IPv6 协议套接字
@@ -51,6 +51,6 @@
 `string receive_from([udp::socket],number buffer_size,[udp::endpoint])`|从远程端点处接收一些数据,最大长度为 `buffer_size`
 `void send_to([udp::socket],string buffer,[udp::endpoint])`|发送一些数据到远程端点
 
-注意:
-0. TCP 套接字和 UDP 套接字的端点不能通用。
-0. Network 扩展会抛出异常。
+**注意:**
++ TCP 套接字和 UDP 套接字的端点不能通用。
++ Network 扩展会抛出异常。

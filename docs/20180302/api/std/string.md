@@ -1,6 +1,6 @@
 ### 文字类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `string append(string,var)`|在尾部追加内容
 `string insert(string,number,var)`|在指定位置处插入内容

@@ -1,6 +1,6 @@
-### Darwin 扩展
+# Darwin 扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `ui`|Darwin UI 名称空间
 `core`|Darwin Core 名称空间
@@ -25,16 +25,16 @@
 `void set_frame_limit(number fps)`|设置帧率
 `void set_draw_line_precision(number)`|设置画线精度
 
-#### Darwin UI 名称空间
+## Darwin UI 名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `void message_box(string title,string message,string button)`|弹出一个消息对话框
 `var input_box(string title,string message,string default,boolean format)`|弹出一个输入对话框
 
-#### Darwin Core 名称空间
+## Darwin Core 名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `char get_char([pixel])`|获取像素的字符
 `void set_char([pixel],char)`|设置像素的字符
@@ -43,9 +43,9 @@
 `[color] get_back_color([pixel])`|获取像素的背景色
 `void set_back_color([pixel],[color])`|设置像素的背景色
 
-### Darwin Drawable 名称空间
+## Darwin Drawable 名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `void load_from_file([drawable],string path)`|从指定路径加载图片(Darwin CDPF 图片文件)
 `void save_to_file([drawable],string path)`|将图片保存至指定路径(Darwin CDPF 图片文件)
@@ -64,5 +64,5 @@
 `void draw_string([drawable],number x,number y,string,[pixel])`|在画布上绘制文字
 `void draw_picture([drawable],number x,number y,[drawable])`|将一幅图片绘制到画布上
 
-**注意:
-Darwin 扩展会抛出异常。**
+**注意:**
++ Darwin 扩展会抛出异常。

@@ -1,6 +1,6 @@
 #### `runtime` 名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `std_version`|标准版本号(`Number`)
 `void info()`|解释器版本信息

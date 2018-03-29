@@ -1,6 +1,6 @@
 ### 数组类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `iterator`|数组迭代器名称空间
 `var at(array,number)`|访问指定的元素,同时进行越界检查
@@ -22,7 +22,7 @@
 
 #### 数组迭代器名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `[iterator] forward([iterator])`|向前移动迭代器
 `[iterator] backward([iterator])`|向后移动迭代器

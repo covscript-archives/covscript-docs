@@ -1,4 +1,4 @@
-### SQLite 扩展
+# SQLite 扩展
 
 `statement`|SQLite 语句名称空间
 `integer`|SQLite 整数类型
@@ -8,9 +8,9 @@
 `[sqlite] open(string path)`|打开或创建一个 SQLite 数据库
 `[statement] prepare([sqlite] database,string sql)`|准备一个 SQLite 语句
 
-#### SQLite 语句名称空间
+## SQLite 语句名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `boolean done([statement])`|判断是否执行完毕
 `void reset([statement])`|重置语句
@@ -28,5 +28,5 @@
 `void bind_text([statement],number index,string data)`|绑定文本参数
 `void clear_bindings([statement])`|清除所有绑定
 
-**注意:
-SQLite 扩展会抛出异常。**
+**注意:**
++ SQLite 扩展会抛出异常。

@@ -1,6 +1,6 @@
 ### 链表类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `iterator`|链表迭代器名称空间
 `var front(list)`|访问第一个元素
@@ -22,7 +22,7 @@
 
 #### 链表迭代器名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `[iterator] forward([iterator])`|向前移动迭代器
 `[iterator] backward([iterator])`|向后移动迭代器

@@ -1,6 +1,6 @@
 ### 字符类型扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `boolean isalnum(char)`|检查字符是否是字母或数字
 `boolean isalpha(char)`|检查字符是否是字母

@@ -1,6 +1,6 @@
-### `regex` 扩展
+# `regex` 扩展
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `result`|Regex Result 名称空间
 `[regex] build(string)`|构建一个正则表达式
@@ -8,9 +8,9 @@
 `[result] search([regex],string)`|匹配正则表达式到字符序列的任何部分
 `string replace([regex],string str,string fmt)`|以格式化的替换文本来替换正则表达式匹配的出现位置
 
-#### Regex Result 名称空间
+## Regex Result 名称空间
 
-代码|<p/>
+代码|功能
 :---:|:---:
 `boolean ready([result])`|检查结果是否合法
 `boolean empty([result])`|检查匹配是否成功
@@ -21,5 +21,5 @@
 `string prefix([result])`|返回目标序列起始和完整匹配起始之间的子序列
 `string suffix([result])`|返回完整匹配结尾和目标序列结尾之间的子序列
 
-**注意:
-Regex 扩展会抛出异常。**
+**注意:**
++ Regex 扩展会抛出异常。
