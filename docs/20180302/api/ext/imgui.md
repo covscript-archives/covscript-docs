@@ -2,11 +2,12 @@
 
 代码|功能
 :---:|:---:
-application|应用程序名称空间
-bmp_image|位图名称空间
-keys|特殊键名称空间
-dirs|方位名称空间
-flags|窗口参数名称空间
+`application`|应用程序名称空间
+`bmp_image`|位图名称空间
+`keys`|特殊键名称空间
+`dirs`|方位名称空间
+`flags`|窗口参数名称空间
+
 ### OPEN GL 函数
 
 代码|功能
@@ -14,6 +15,7 @@ flags|窗口参数名称空间
 `number get_monitor_count()`|获取屏幕数量
 `number get_monitor_width(number monitor_id)`|获取指定屏幕的宽度
 `number get_monitor_height(number monitor_id)`|获取指定屏幕的高度
+
 ### 应用程序
 
 代码|功能
@@ -24,6 +26,7 @@ flags|窗口参数名称空间
 `[vec2] vec2(number a,number b)`|创建二维向量
 `[vec4] vec4(number a,number b,number c,number d)`|创建四维向量
 `number get_framerate()`|获取帧率
+
 ### 样式
 
 代码|功能
@@ -32,6 +35,7 @@ flags|窗口参数名称空间
 `void style_color_classic()`|切换到经典配色
 `void style_color_light()`|切换到亮色配色
 `void style_color_dark()`|切换到暗色配色
+
 ### 窗口
 
 代码|功能
@@ -51,6 +55,7 @@ flags|窗口参数名称空间
 `void end_window()`|结束窗口布局
 `void begin_child(string str)`|开始新子滚动区域
 `void end_child()`|结束子滚动区域
+
 ### 布局
 
 代码|功能
@@ -62,6 +67,7 @@ flags|窗口参数名称空间
 `void spacing()`|插入空格
 `void indent()`|缩进
 `void unindent()`|反缩进
+
 ### 标识符
 *标识符一般用于右键菜单等，默认情况下标识符就是控件名，但有些控件无 ID 时就要特别标示*  
 *一般控件名可使用 `Text##ID` 的形式指定控件的标识符*
@@ -70,6 +76,7 @@ flags|窗口参数名称空间
 :---:|:---:
 `void push_id(string id)`|创建新标识符
 `void pop_id()`|结束标识符
+
 ### 控件
 *按钮类控件会在被按下时返回真*  
 *输入框需要指定字符缓冲区的大小*
@@ -93,6 +100,7 @@ flags|窗口参数名称空间
 `void color_edit4(string str,[vec4] color)`|四色色彩编辑器
 `void selectable(string str,boolean selected)`|可选控件
 `void list_box(string str,number current,array items)`|列表控件
+
 ### 树形结构
 
 代码|功能
@@ -100,6 +108,7 @@ flags|窗口参数名称空间
 `boolean tree_node(string label)`|创建新的树节点
 `void tree_pop()`|结束树节点
 *注意，只有 tree_node()返回真时才需要调用 tree_pop()*
+
 ### 菜单
 
 代码|功能
@@ -116,12 +125,14 @@ flags|窗口参数名称空间
 `boolean begin_popup_background()`|开始背景右键菜单布局
 `void end_popup()`|结束右键菜单布局
 *注意，只有菜单成功打开才需要调用结束函数*
+
 ### 焦点
 
 代码|功能
 :---:|:---:
 `void set_scroll_here()`|将滚动条滚动到当前位置
 `void set_keyboard_focus_here()`|设置上一个控件为键盘焦点
+
 ### 工具
 
 代码|功能
@@ -129,6 +140,7 @@ flags|窗口参数名称空间
 `boolean is_item_hovered()`|返回控件是否被鼠标悬停
 `string get_clipboard_text()`|获取剪贴板文字
 `void set_clipboard_text(string str)`|设置剪贴板文字
+
 ### 输入
 
 代码|功能
@@ -144,6 +156,7 @@ flags|窗口参数名称空间
 `number get_mouse_pos_y()`|获取鼠标位置`y`坐标
 `number get_mouse_drag_delta_x()`|获取鼠标拖动`x`坐标变化值
 `number get_mouse_drag_delta_y()`|获取鼠标拖动`y`坐标变化值
+
 ### 画板
 
 代码|功能
@@ -159,6 +172,7 @@ flags|窗口参数名称空间
 `void add_circle_filled([vec2] centre,number radius,[vec4] color,number seg)`|填充圆
 `void add_text([vec2] pos,[vec4] color,string text)`|绘制文字
 `void add_image([image] image,[vec2] a,[vec2] b)`|绘制图片
+
 ## 应用程序名称空间
 
 代码|功能
@@ -181,12 +195,14 @@ while !app.is_closed()
     app.render()
 end
 ```
+
 ## 位图名称空间
 
 代码|功能
 :---:|:---:
 `number get_width([image] image)`|获取图片宽度
 `number get_height([image] image)`|获取图片高度
+
 ## 方位名称空间
 
 代码|功能
@@ -195,6 +211,7 @@ end
 `right`|右
 `up`|上
 `down`|下
+
 ## 窗口参数名称空间
 
 代码|功能
@@ -208,6 +225,7 @@ end
 `no_saved_settings`|不保存设置
 `menu_bar`|开启菜单栏
 `horizontal_scroll_bar`|开启横向滚动条
+
 ## 特殊键名称空间
 
 代码|功能
