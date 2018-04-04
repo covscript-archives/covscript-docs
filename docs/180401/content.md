@@ -60,6 +60,8 @@
         + JVM
 + 解释器
     + 命令行参数
+        + [解释器](http://covscript.org/docs/180401/program/cmd_args/cs)
+        + [交互式解释器](http://covscript.org/docs/180401/program/cmd_args/cs_repl)
     + 扩展库开发
         + Callable对象
         + C/C++ Native Interface
