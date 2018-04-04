@@ -15,6 +15,7 @@ Callable类型
 + `types::normal` 普通函数
 + `types::constant` 常量函数（可编译期调用）
 + `types::member_fn` 成员函数
+
 ## 成员函数
 ```
 callable() = delete;
