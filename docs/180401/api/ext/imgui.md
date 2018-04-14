@@ -84,15 +84,24 @@
 代码|功能
 :---:|:---:
 `void text(string str)`|文本控件
-`void bullet()`|圆圈提示控件，会自动插入`same_line()`
+`void text_colored([vec4] color, string str)`|带颜色的文本控件
+`void text_disabled(string str)`|禁用的文本控件
+`void text_wrappered(string str)`|自动折行文本控件
+`void label_text(string label, string str)`|标签文本控件
+`void bullet_text(string str)`|圆圈文本控件
 `boolean button(string str)`|按钮
-`boolean arrow(string str,[dir] dir)`|箭头按钮
+`boolean small_button(string str)`|小按钮
+`boolean arrow_button(string str,[dir] dir)`|箭头按钮
 `void image([image] img,[vec2] size)`|图片
 `boolean image_button([image] img,[vec2] size)`|图片按钮
 `void check_box(string str,boolean val)`|多选框
 `void radio_button(string str,number v,number v_button)`|单选框
+`void plot_lines(string label, string text, array data)`|折线图
+`void plot_histogram(string label, string text, array data)`|直方图
 `void progress_bar(number fraction,string overlay)`|进度条，进度的范围是`0~1`
+`void bullet()`|圆圈提示控件，会自动插入`same_line()`
 `void combo_box(string str,number current,array items)`|下拉框
+`void drag_float(const string label, number n)`|拖动条
 `void slider_float(string str,number n,number min,number max)`|拖动条
 `void input_text(string str,string text,number buff_size)`|输入框
 `void input_text_multiline(string str,string text,number buff_size)`|多行输入框
@@ -100,6 +109,14 @@
 `void color_edit4(string str,[vec4] color)`|四色色彩编辑器
 `void selectable(string str,boolean selected)`|可选控件
 `void list_box(string str,number current,array items)`|列表控件
+
+### 提示信息
+
+代码|功能
+:---:|:---:
+`void set_tooltip(string str)`|设置提示信息
+`void begin_tooltip()`|开始提示信息布局
+`void end_tooltip()`|结束提示信息布局
 
 ### 树形结构
 
