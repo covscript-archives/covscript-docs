@@ -102,7 +102,7 @@
 `void bullet()`|圆圈提示控件，会自动插入`same_line()`
 `void combo_box(string str,number current,array items)`|下拉框
 `void drag_float(const string label, number n)`|拖动条
-`void slider_float(string str,number n,number min,number max)`|拖动条
+`void slider_float(string str,number n,number min,number max)`|滑动块
 `void input_text(string str,string text,number buff_size)`|输入框
 `void input_text_multiline(string str,string text,number buff_size)`|多行输入框
 `void color_edit3(string str,[vec4] color)`|三色色彩编辑器
