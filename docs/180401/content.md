@@ -64,7 +64,7 @@
         + [交互式解释器](http://covscript.org/docs/180401/program/cmd_args/cs_repl)
     + 扩展库开发
         + [Callable对象](http://covscript.org/docs/180401/program/ext_dev/callable)
-        + C/C++ Native Interface
+        + [C/C++ Native Interface](http://covscript.org/docs/180401/program/ext_dev/cni)
         + 类型扩展
             + 支持`this`
             + 定制名称
