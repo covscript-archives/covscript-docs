@@ -4,10 +4,19 @@
 
 版权所有 © 2018 Michael Lee(李登淳)  
 
-此程序是免费软件：您可以根据自由软件基金会发布的 GNU Affero 通用公共许可协议（版本3的许可协议）或（可选）更新的版本对其进行重新分发和/或修改。  
-我们在分发此程序时希望它会有用，但没有任何的保证; 甚至没有对适销性或特定用途的适用性的暗示保证。有关更多详细信息，请参阅 GNU Affero 通用公共许可协议。  
-您应该收到 GNU Affero 通用公共许可协议的副本以及此程序。 如果没有，请参阅：http://www.gnu.org/licenses  
-使用此程序即代表你同意并遵守 GNU Affero 通用公共许可协议的所有条款，保留所有权利。  
+Licensed under the Apache License, Version 2.0 (the "License");  
+you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at  
+  
+http://www.apache.org/licenses/LICENSE-2.0  
+  
+Unless required by applicable law or agreed to in writing, software  
+distributed under the License is distributed on an "AS IS" BASIS,  
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
+See the License for the specific language governing permissions and  
+limitations under the License.  
+  
+使用此程序即代表你同意并遵守Apache许可协议的所有条款，保留所有权利。  
 
 [Github主页](https://github.com/covscript)  
 [Email](mailto:mikecovlee@163.com)
