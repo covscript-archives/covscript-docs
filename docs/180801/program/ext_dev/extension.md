@@ -14,33 +14,64 @@ Covariant Script要求每个扩展至少有一个静态的扩展类对象以供C
 > 无
 
 ### 成员函数
-```
+```c++
 name_space();
 ```
 默认构造函数
-```
+****
+```c++
 name_space(const name_space &) = delete;
 ```
 复制构造函数（删除）
-```
-name_space(const cs::domain_t &);
+****
+```c++
+explicit name_space(const cs::domain_t &);
 ```
 使用已有的作用域构造一个名称空间对象
-```
+****
+```c++
 ~name_space();
 ```
 析构函数
-```
-void add_var(const std::string &, const cs::var &)
+****
+```c++
+name_space& add_var(const std::string &, const cs::var &)
 ```
 增加新变量
-```
+****
+```c++
 cs::var &get_var(const std::string &)
 ```
 获取名称空间中的变量
-```
+****
+```c++
 cs::domain_t get_domain() const
 ```
 获取名称空间对应的作用域
 
 ## 扩展主函数
+扩展主函数的功能主要是加载扩展的功能并返回一个能够被CovScript读取的指针。实际上还有一部分必需的CovScript功能在扩展主函数被调用之前也会被加载。
+扩展主函数的形式很简单：
+```c++
+cs::extension* cs_extension() {
+    // TODO
+    return &my_ext;
+}
+```
+其中，`my_ext`是提前定义的静态扩展类对象，可以根据需要更换为其他名称。
+
+## 范例：Hello，My extension
+```c++
+#include <covscript/extension.hpp>
+#include <covscript/cni.hpp>
+#include <iostream>
+
+using namespace cs;
+static extension my_ext;
+
+extension* cs_extension() {
+    return &my_ext.add_var("hello",make_cni([]{
+        std::cout<<"Hello, My extension"<<std::endl;
+    }));
+}
+```
