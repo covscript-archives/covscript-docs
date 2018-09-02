@@ -17,17 +17,23 @@ CNI的性能理论上可能相对于直接使用Callable对象要低一些，因
 cni() = delete;
 ```
 默认构造函数（删除）
+
 ****
+
 ```c++
 cni(const cni &);
 ```
 复制构造函数
+
 ****
+
 ```c++
 template<typename T> cni(T &&val)
 ```
 构造一个CNI并将参数指定的函数绑定在CNI上，此函数将应用全局设定的转换规则
+
 ****
+
 ```c++
 template<typename T, typename X> cni(T &&val, cs::cni_type<X>);
 ```  
@@ -36,12 +42,16 @@ template<typename T, typename X> cni(T &&val, cs::cni_type<X>);
 cs::cni_type<Return_Type(Argument_List...)>
 ```
 应用此参数将直接跳过CNI的自动转换规则
+
 ****
+
 ```c++
 ~cni();
 ```
 析构函数
+
 ****
+
 ```c++
 cs::var operator()(cs::vector &args) const
 ```
