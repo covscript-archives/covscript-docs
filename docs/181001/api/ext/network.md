@@ -29,6 +29,13 @@
 `void send([tcp::socket],string buffer)`|发送一些数据
 `[tcp::endpoint] remote_endpoint([tcp::socket])`|获取远程端点
 
+## TCP 端点类型扩展
+
+代码|功能
+:---:|:---:
+`string address([tcp::endpoint])`|获取端点指向的地址
+`number port([tcp::endpoint])`|获取端点指向的端口
+
 ## UDP 套接字名称空间
 
 代码|功能
@@ -50,6 +57,13 @@
 `boolean is_open([udp::socket])`|查询套接字是否打开
 `string receive_from([udp::socket],number buffer_size,[udp::endpoint])`|从远程端点处接收一些数据,最大长度为 `buffer_size`
 `void send_to([udp::socket],string buffer,[udp::endpoint])`|发送一些数据到远程端点
+
+## UDP 端点类型扩展
+
+代码|功能
+:---:|:---:
+`string address([udp::endpoint])`|获取端点指向的地址
+`number port([udp::endpoint])`|获取端点指向的端口
 
 **注意:**
 + TCP 套接字和 UDP 套接字的端点不能通用。
