@@ -1,7 +1,7 @@
-### 引入 Package
+### 引入一个或多个 Package
 
 ```
-import Package名
+import Package名, Package名...
 ```
 
 引入的Package可以是 \*.csp 文件(CovScript 包)或者是 \*.cse 文件(CovScript 扩展)  
