@@ -32,6 +32,8 @@
 代码|功能
 :---:|:---:
 `void add_font(string str,number size)`|增加字体
+`void add_font_default(number size)`|增加默认字体
+`void set_font_scale(number scale)`|设置字体缩放比例
 `void style_color_classic()`|切换到经典配色
 `void style_color_light()`|切换到亮色配色
 `void style_color_dark()`|切换到暗色配色
@@ -48,6 +50,7 @@
 `void set_window_size([vec2] size)`|设置当前窗口大小
 `void set_next_window_focus()`|设置下一个窗口为焦点
 `void set_window_focus()`|设置当前窗口为焦点
+`void set_window_font_scale(number scale)`|设置当前窗口字体缩放比例
 `number get_window_width()`|获取当前窗口宽度
 `number get_window_height()`|获取当前窗口高度
 `void show_demo_window(boolean open)`|打开示例窗口
@@ -138,12 +141,29 @@
 `boolean begin_menu(string str,boolean enabled)`|开始菜单项
 `void end_menu()`|结束菜单项
 `boolean menu_item(string str,string shortcut,boolean enabled)`|菜单项目
-`boolean begin_popup_item(string id)`|开始控件右键菜单布局
-`boolean begin_popup_window()`|开始窗口右键菜单布局
-`boolean begin_popup_background()`|开始背景右键菜单布局
-`void end_popup()`|结束右键菜单布局
+`void open_popup(string id)`|显示弹出
+`boolean begin_popup(string id)`|开始弹出菜单布局
+`boolean begin_popup_item(string id)`|开始控件弹出菜单布局
+`boolean begin_popup_window()`|开始窗口弹出菜单布局
+`boolean begin_popup_background()`|开始背景弹出菜单布局
+`boolean begin_popup_modal(string title, boolean is_open, array flags_arr)`|开始弹出窗口布局
+`void end_popup()`|结束弹出布局
+`void close_current_popup()`|关闭当前弹出
 
 *注意，只有菜单成功打开才需要调用结束函数*
+
+### 表格
+
+代码|功能
+:---:|:---:
+`void columns(number count, string id, boolean border)`|插入表格
+`void next_column()`|进入下一个表格区域
+`number get_column_index()`|获取当前列索引
+`number get_column_width(number index)`|获取指定列索引处的宽度
+`void set_column_width(number index, number width)`|设置指定列索引处的宽度
+`number get_column_offset(number index)`|获取指定列索引处的x偏移量
+`void set_column_offset(number index, number offset)`|设置指定列索引处的x偏移量
+`number get_cloumns_count()`|获取列数量
 
 ### 焦点
 
