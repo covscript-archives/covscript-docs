@@ -80,7 +80,7 @@ limitations under the License.
             + 定制名称
             + 规定行为 
     + 解释器API
-        + 运行文件
+        + [运行文件](http://covscript.org/docs/181001/api/sdk/instance)
         + 运行语句
         + 运行时交互
             + 获取/增添变量
