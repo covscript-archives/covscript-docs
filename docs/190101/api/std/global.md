@@ -17,6 +17,8 @@
 `system`|系统名称空间
 `runtime`|运行时名称空间
 `math`|数学名称空间
+`[range] range(number stop)`|生成一个步长为1的一个区间[0, stop)
+`[range] range(number start, number stop[, number step=1])`|生成一个步长为step(默认为1)的区间[start, stop)
 `number to_integer(var)`|将一个变量转换为整数
 `string to_string(var)`|将一个变量转换为文字
 `string type(var)`|获取一个变量的类型名
