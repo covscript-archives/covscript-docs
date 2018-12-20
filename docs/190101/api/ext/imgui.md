@@ -34,9 +34,9 @@
 `void add_font(string str,number size)`|增加字体
 `void add_font_default(number size)`|增加默认字体
 `void set_font_scale(number scale)`|设置字体缩放比例
-`void style_color_classic()`|切换到经典配色
-`void style_color_light()`|切换到亮色配色
-`void style_color_dark()`|切换到暗色配色
+`void style_color_classic()`|切换到经典主题
+`void style_color_light()`|切换到亮色主题
+`void style_color_dark()`|切换到暗色主题
 
 ### 窗口
 
@@ -53,7 +53,13 @@
 `void set_window_font_scale(number scale)`|设置当前窗口字体缩放比例
 `number get_window_width()`|获取当前窗口宽度
 `number get_window_height()`|获取当前窗口高度
-`void show_demo_window(boolean open)`|打开示例窗口
+`void show_demo_window(boolean is_open)`|打开示例窗口
+`void show_about_window(boolean is_open)`|打开关于窗口
+`void show_metrics_window(boolean is_open)`|打开指标窗口
+`void show_style_editor()`|打开主题编辑器
+`bool show_style_selector(string label)`|主题选择器控件
+`void show_font_selector(string label)`|字体选择器控件
+`void show_user_guide()`|显示用户操作指引
 `void begin_window(string str,boolean open,array flags_arr)`|开始新窗口布局
 `void end_window()`|结束窗口布局
 `void begin_child(string str)`|开始新子滚动区域
