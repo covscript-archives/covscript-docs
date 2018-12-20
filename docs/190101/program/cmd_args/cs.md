@@ -1,13 +1,15 @@
-# 解释器参数
-`cs [参数...] <文件> <运行参数...>`  
-
-参数|功能
-:---:|:---:
-`--compile-only`|仅编译
-`--no-optimize`|关闭优化器
-`--dump-ast`|导出抽象语法树  
-`--wait-before-exit`|等待进程退出  
-`--log-path PATH`|设置日志和导出AST路径  
-`--import-path PATH`|设置`import`路径
+# 解释器 #
+`cs [选项...] <文件> [参数...]`
+#### 选项 ####
+选项|助记符|功能
+:---:|:---:|:--:
+`--compile-only`|`-c`|仅编译
+`--no-optimize`|`-o`|禁用优化器
+`--help`|`-h`|显示帮助信息
+`--version`|`-v`|显示版本信息
+`--wait-before-exit`|`-w`|等待进程退出
+`--dump-ast`|`-d`|导出高级语法树
+`--log-path <PATH>`|`-l <PATH>` |设置日志和语法树导出路径
+`--import-path <PATH>`|`-i <PATH>`|设置引入查找路径
 
 **注意，若不设置日志和导出AST路径，这两者将直接输出至标准输出流**
