@@ -60,6 +60,7 @@ limitations under the License.
         + [ImGui](http://covscript.org/docs/190101/api/ext/imgui)
         + [Darwin](http://covscript.org/docs/190101/api/ext/darwin)
         + [Regex](http://covscript.org/docs/190101/api/ext/regex)
+        + [Codec](http://covscript.org/docs/190101/api/ext/codec)
         + [Streams](http://covscript.org/docs/190101/api/ext/streams)
         + [SQLite](http://covscript.org/docs/190101/api/ext/sqlite)
         + [Network](http://covscript.org/docs/190101/api/ext/network)
