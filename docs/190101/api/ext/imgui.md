@@ -6,7 +6,7 @@
 `bmp_image`|位图名称空间
 `keys`|特殊键名称空间
 `dirs`|方位名称空间
-`flags`|窗口参数名称空间
+`flags`|窗口/标签参数名称空间
 
 ### OPEN GL 函数
 
@@ -48,6 +48,8 @@
 `number get_window_pos_y()`|获取当前窗口位置`y`坐标
 `void set_next_window_size([vec2] size)`|设置下一个窗口大小
 `void set_window_size([vec2] size)`|设置当前窗口大小
+`void set_next_window_collapsed(boolean collapsed)`|设置下一个窗口展开
+`void set_window_collapsed(boolean collapsed)`|设置当前窗口展开
 `void set_next_window_focus()`|设置下一个窗口为焦点
 `void set_window_focus()`|设置当前窗口为焦点
 `void set_window_font_scale(number scale)`|设置当前窗口字体缩放比例
@@ -57,10 +59,10 @@
 `void show_about_window(boolean is_open)`|打开关于窗口
 `void show_metrics_window(boolean is_open)`|打开指标窗口
 `void show_style_editor()`|打开主题编辑器
-`bool show_style_selector(string label)`|主题选择器控件
+`boolean show_style_selector(string label)`|主题选择器控件
 `void show_font_selector(string label)`|字体选择器控件
 `void show_user_guide()`|显示用户操作指引
-`void begin_window(string str,boolean open,array flags_arr)`|开始新窗口布局
+`void begin_window(string str,boolean is_open,array flags)`|开始新窗口布局
 `void end_window()`|结束窗口布局
 `void begin_child(string str)`|开始新子滚动区域
 `void end_child()`|结束子滚动区域
@@ -113,6 +115,7 @@
 `void drag_float(const string label, number n)`|拖动条
 `void slider_float(string str,number n,number min,number max)`|滑动块
 `void input_text(string str,string text,number buff_size)`|输入框
+`void input_text_hint(string str, string hint, string text, number buff_size)`|带有提示的输入框
 `void input_text_multiline(string str,string text,number buff_size)`|多行输入框
 `void color_edit3(string str,[vec4] color)`|三色色彩编辑器
 `void color_edit4(string str,[vec4] color)`|四色色彩编辑器
@@ -158,6 +161,18 @@
 
 *注意，只有菜单成功打开才需要调用结束函数*
 
+### 标签
+
+代码|功能
+:---:|:---:
+`boolean begin_tab_bar(string id)`|开始标签栏布局
+`void end_tab_bar()`|结束标签栏布局
+`boolean begin_tab_item(string id, boolean is_open, array flags)`|开始标签页布局
+`void end_tab_item()`|结束标签页布局
+`void set_tab_item_closed(string id)`|关闭特定标签页
+
+*注意，只有标签栏或标签页成功打开才需要调用结束函数*
+
 ### 表格
 
 代码|功能
@@ -183,6 +198,13 @@
 代码|功能
 :---:|:---:
 `boolean is_item_hovered()`|返回控件是否被鼠标悬停
+`boolean is_item_active()`|返回控件是否激活
+`boolean is_item_focused()`|返回控件是否在焦点
+`boolean is_item_clicked(number button)`|返回控件是否被点击(0=左键, 1=右键, 2=中键)
+`boolean is_item_visible()`|返回控件是否可见
+`boolean is_any_item_hovered()`|返回是否有任何控件被鼠标悬停
+`boolean is_any_item_active()`|返回是否有任何控件激活
+`boolean is_any_item_focused()`|返回是否有任何控件在焦点
 `string get_clipboard_text()`|获取剪贴板文字
 `void set_clipboard_text(string str)`|设置剪贴板文字
 
@@ -194,9 +216,12 @@
 `boolean is_key_down(number key)`|返回键是否激发
 `boolean is_key_pressed(number key)`|返回键是否按下
 `boolean is_key_released(number key)`|返回键是否松开
-`boolean is_mouse_clicked(number button)`|返回鼠标按键是否单击
-`boolean is_mouse_double_clicked(number button)`|返回鼠标按键是否双击
-`boolean is_mouse_dragging(number button)`|返回鼠标是否拖动
+`boolean is_mouse_down(number button)`|返回鼠标按键是否按下(0=左键, 1=右键, 2=中键)
+`boolean is_any_mouse_down()`|返回是否任何鼠标按键被按下
+`boolean is_mouse_clicked(number button)`|返回鼠标按键是否单击(0=左键, 1=右键, 2=中键)
+`boolean is_mouse_double_clicked(number button)`|返回鼠标按键是否双击(0=左键, 1=右键, 2=中键)
+`boolean is_mouse_released(number button)`|返回鼠标按键是否释放(0=左键, 1=右键, 2=中键)
+`boolean is_mouse_dragging(number button)`|返回鼠标是否拖动(0=左键, 1=右键, 2=中键)
 `number get_mouse_pos_x()`|获取鼠标位置`x`坐标
 `number get_mouse_pos_y()`|获取鼠标位置`y`坐标
 `number get_mouse_drag_delta_x()`|获取鼠标拖动`x`坐标变化值
@@ -271,6 +296,13 @@ end
 `no_saved_settings`|不保存设置
 `menu_bar`|开启菜单栏
 `horizontal_scroll_bar`|开启横向滚动条
+
+## 标签参数名称空间
+
+代码|功能
+:---:|:---:
+`unsaved_document`|设置为未保存标签
+`set_selected`|选中标签
 
 ## 特殊键名称空间
 
