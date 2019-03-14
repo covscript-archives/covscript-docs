@@ -39,6 +39,7 @@
 `boolean good([istream])`|检查是否有错误
 `boolean eof([istream])`|检查是否到达文件结尾
 `var input([istream])`|从流中获取输入(格式化)
+`void ignore([istream])`|忽略流中下一行前所有内容
 
 #### 输出流名称空间
 
