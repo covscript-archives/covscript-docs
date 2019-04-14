@@ -1,10 +1,11 @@
 # SQLite 扩展
 
+代码|功能
+:---:|:---:
 `statement`|SQLite 语句名称空间
 `integer`|SQLite 整数类型
 `real`|SQLite 浮点类型
 `text`|SQLite 文本类型
-
 `[sqlite] open(string path)`|打开或创建一个 SQLite 数据库
 `[statement] prepare([sqlite] database,string sql)`|准备一个 SQLite 语句
 
